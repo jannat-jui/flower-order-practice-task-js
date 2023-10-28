@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Flowers</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+    li .dropdown{
+        display: none;
+        position: absolute;
+
+    }
+    li:hover> .dropdown{
+        display: block;
+    }
+</style>
+</head>
+<body>
+
+    <header>
+        <div class="navbar bg-base-100 flex flex-col lg:flex-row items-center mt-4">
+            <div class="flex-1">
+              <a class="btn btn-ghost normal-case text-2xl">Navbar</a>
+             
+              <ul class="flex gap-4">
+                <li> <a class="hover:font-bold" href="">Home</a></li>
+                <li> <a class="hover:font-bold" href="">Link</a></li>
+                <li> <a class="hover:font-bold" href="">Dropdown</a>
+                <ul class="dropdown pt-2">
+                    <li><a class="hover:font-bold" href="">Contact</a></li>
+                    <li><a class="hover:font-bold" href="">Login</a></li>
+                    <li><a class="hover:font-bold" href="">Info</a></li>
+                </ul></li>
+                <li><a class="hover:font-bold" href="">Disasbled</a></li>
+              </ul>
+            </div>
+            <div class="flex-none gap-2">
+              <div class="form-control">
+                <input type="text" placeholder="Search" class="input input-bordered w-[20rem]" />
+                
+              </div>
+              <button class="btn btn-primary text-white">Search</button>
+            </div>
+          </div>
+    </header>
+    
+    <main>
+        <h1 class="text-5xl font-bold text-center mt-12">All Flower Cards</h1>
+
+        <section class="mt-20 ml-8 flex flex-col lg:flex-row gap-6">
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure ><img class="w-96 h-[15rem]" src="./images/pngwing 10.png" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 id="snow-white" class="card-title">Snow White</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <p class="text-2xl font-semibold">price: <span id="snow-white-price">50</span> $</p>
+                  <div class="card-actions justify-start mt-4">
+                    <button id="snow-white-addCart" class="btn btn-secondary text-white font-semibold">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+
+
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure ><img class="w-96 h-[15rem]" src="./images/pngwing 7.png" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 id="snow-red" class="card-title">Snow Red</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <p class="text-2xl font-semibold">price: <span id="snow-red-price">30</span> $</p>
+                  <div class="card-actions justify-start mt-4">
+                    <button id="snow-red-btn" class="btn btn-secondary text-white font-semibold">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+
+
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure ><img class="w-96 h-[15rem]" src="./images/pngwing 8.png" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 id="snow-pink-value" class="card-title">Snow Pink</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <p class="text-2xl font-semibold">price: <span id="snow-pink-price">100</span> $</p>
+                  <div class="card-actions justify-start mt-4">
+                    <button id="snow-pink-btn" class="btn btn-secondary text-white font-semibold">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="lg:w-[30rem]">
+                <h1 class="text-2xl font-semibold text-center">Code: Hero</h1>
+                <div id="add-title">
+
+                </div>
+                <p class="text-lg font-semibold text-center mt-8">Total: <span id="total-amount">00</span></p>
+                <p class="text-lg font-semibold text-center mt-4">Discount: <span>00</span></p>
+                <p class="text-2xl font-semibold text-center mt-12 mb-11 lg:mb-0">Grand total: <span id="grand-total">00</span></p>
+              </div>
+        </section>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
